@@ -1,0 +1,24 @@
+.task {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 15px;
+  border: 2px solid #2aa4c98a;
+}
+.title-hw5,
+#text {
+  margin-left: 10px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
