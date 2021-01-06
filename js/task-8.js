@@ -53,6 +53,7 @@ function createBoxes(amount) {
 }
 function destroyBoxes() {
   boxesRef.textContent = '';
+  inputRef.value = 0;
 }
 
 function get_random_color() {
