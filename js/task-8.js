@@ -29,8 +29,11 @@ const defaultSize = 30;
 
 onBtnRenderRef.addEventListener('click', () => {
   const amount = Number(inputRef.value);
-  if (amount !== amount) {
-    console.error(`Amount is not a number '${amount}'`);
+  if (amount < 0 || amount > 100) {
+    console.error(
+      `Enter a number between 0 and 100. Entered number '${amount}'`,
+    );
+    alert(`Введите число от 0 до 100. Введенное число '${amount}'`);
     return;
   }
   createBoxes(amount);
