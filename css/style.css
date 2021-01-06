@@ -22,3 +22,9 @@
 #validation-input.invalid {
   border-color: #f44336;
 }
+#boxes {
+  margin-left: 15px;
+}
+#boxes > div {
+  margin-bottom: 1px;
+}

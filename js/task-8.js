@@ -52,10 +52,7 @@ function createBoxes(amount) {
   boxesRef.append(...masValues);
 }
 function destroyBoxes() {
-  const delBox = boxesRef.querySelector('div');
-  // const delBox = boxesRef.querySelectorAll('div'); //Does not work!!!!!?????
-  console.log(delBox);
-  boxesRef.removeChild(delBox);
+  boxesRef.textContent = '';
 }
 
 function get_random_color() {
