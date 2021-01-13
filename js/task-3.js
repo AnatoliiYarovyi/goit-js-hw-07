@@ -48,11 +48,12 @@ console.table(images);
 const listRef = document.querySelector('#gallery');
 const imagesGallery = images.map(image => {
   const item = document.createElement('li');
-  listRef.appendChild(item);
-  const img = document.createElement('img');
   item.insertAdjacentHTML(
     'afterbegin',
     `<img src = ${image.url} alt = ${image.alt} width = 400px >`,
   );
+
   return item;
 });
+
+listRef.append(...imagesGallery);
