@@ -9,11 +9,12 @@
 const inputRef = document.querySelector('#name-input');
 const outputRef = document.querySelector('#name-output');
 
-inputRef.addEventListener('input', evt => {
-  console.dir(evt.target.value);
-  if (evt.target.value === '') {
+inputRef.addEventListener('input', evt => {  
+  let inputValue = evt.target.value.trim();
+  console.dir(inputValue);
+  if (inputValue === '') {
     outputRef.textContent = 'незнакомец';
   } else {
-    outputRef.textContent = evt.target.value.trim();
+    outputRef.textContent = inputValue;
   }
 });
